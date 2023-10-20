@@ -87,7 +87,7 @@ app.get(
   "/auth/google/callback",
   passport.authenticate("google"),
   (req, res) => {
-    res.redirect("http://localhost:3000/home");
+    res.redirect("https://recipe-application-rho.vercel.app/home");
   }
 );
 
