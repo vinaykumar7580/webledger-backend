@@ -44,7 +44,7 @@ passport.use(
     {
       clientID: process.env.clientId,
       clientSecret: process.env.clientSecret,
-      callbackURL: "/auth/google/callback",
+      callbackURL: "https://busy-rose-harp-seal-cape.cyclic.app/auth/google/callback",
     },
     (accessToken, refreshToken, profile, done) => {
       AuthModel.findOne({ googleId: profile.id })
